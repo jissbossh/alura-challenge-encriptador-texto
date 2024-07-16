@@ -7,7 +7,8 @@ This application was developed as part of the text encryption challenge - Alura 
 ## Technologies<br>Tecnologias
 
 **Programming languages<br>Lenguajes de programacion**
-<br>Html, Css, JavaScript
+<br><div align="left"><img src="https://github.com/jissbossh/jissbossh/blob/main/assets/icons/techs/svg/html/default.svg" width="52" height="40" alt="Html"/><img src="https://github.com/jissbossh/jissbossh/blob/main/assets/icons/techs/svg/css/default.svg" width="52" height="40" alt="Css"/><img src="https://github.com/jissbossh/jissbossh/blob/main/assets/icons/techs/svg/javascript/default.svg" width="52" height="40" alt="JavaScript"/>
+</div>
 
 **Server<br>Servidor**<br>Github Pages
 ## Demo

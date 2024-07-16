@@ -6,14 +6,20 @@ This application was developed as part of the text encryption challenge - Alura 
 
 ## Technologies<br>Tecnologias
 
-**Programming languages<br>Lenguajes de programacion:**
+**Programming languages<br>Lenguajes de programacion**
 <br>Html, Css, JavaScript
 
-**Server<br>Servidor:**<br>Github Pages
+**Server<br>Servidor**<br>Github Pages
+## Demo
+[alura-challenge-encriptador-texto](https://jissbossh.github.io/alura-challenge-encriptador-texto/)
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot]()
+![App Screenshot]()
+![App Screenshot]()
+![App Screenshot]()
+![App Screenshot]()
 
 ## Deployment<br>Despliegue
 

@@ -1,4 +1,4 @@
-![Logo](https://github.com/jissbossg/alura-challenge-encriptador-texto/blob/main/readme/encriptado.png)
+![Logo](https://github.com/jissbossg/alura-challenge-encriptador-texto/blob/main/readme/banner.png)
 
 # Challenge Oracle ONE & Alura latam - G7 Text encryptor.<br>Challenge Oracle ONE & Alura latam - G7 Encriptador de texto
 
@@ -13,13 +13,13 @@ This application was developed as part of the text encryption challenge - Alura 
 ## Demo
 [alura-challenge-encriptador-texto](https://jissbossh.github.io/alura-challenge-encriptador-texto/)
 
-## Screenshots
+## Screenshots<br>Capturas de pantalla
 
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
+![App Screenshot](https://github.com/jissbossh/alura-challenge-encriptador-texto/blob/main/readme/011%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
+![App Screenshot](https://github.com/jissbossh/alura-challenge-encriptador-texto/blob/main/readme/012%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
+![App Screenshot](https://github.com/jissbossh/alura-challenge-encriptador-texto/blob/main/readme/013%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
+![App Screenshot](https://github.com/jissbossh/alura-challenge-encriptador-texto/blob/main/readme/014%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
+![App Screenshot](https://github.com/jissbossh/alura-challenge-encriptador-texto/blob/main/readme/015%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
 
 ## Deployment<br>Despliegue
 
@@ -29,7 +29,7 @@ To deploy this project run<br>Para implementar este proyecto, ejecute
  git clone https://github.com/jissbossh/alura-challenge-encriptador-texto.git
 ```
 
-## Authors / Autor
+## Authors<br>Autor
 
 - [Jorge Ivan Sierra Suarez (@jissbossh)](https://github.com/jissbossh)
 

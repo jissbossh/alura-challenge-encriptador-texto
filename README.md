@@ -29,7 +29,7 @@ To deploy this project run<br>Para implementar este proyecto, ejecute
  git clone https://github.com/jissbossh/alura-challenge-encriptador-texto.git
 ```
 
-## Authors<br>Autor
+## 👨‍💻<br>Authors<br>Autor
 
 - [Jorge Ivan Sierra Suarez (@jissbossh)](https://github.com/jissbossh)
 
@@ -41,7 +41,7 @@ I am Jorge Ivan Sierra Suarez, software developer<br>Soy Jorge Ivan Sierra Suare
 
 ###
 
-### 🌍🔗 My social networks<br>Mis redes sociales
+### 🌍🔗<br>My social networks<br>Mis redes sociales
 
 ###
 

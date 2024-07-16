@@ -1,4 +1,4 @@
-![Logo](https://github.com/jissbossg/alura-challenge-encriptador-texto/blob/main/readme/banner.png)
+![Logo](https://github.com/jissbossh/jissbossh/blob/main/assets/images/others/png/encriptador-texto/banner.png)
 
 # Challenge Oracle ONE & Alura latam - G7 Text encryptor.<br>Challenge Oracle ONE & Alura latam - G7 Encriptador de texto
 
@@ -15,11 +15,11 @@ This application was developed as part of the text encryption challenge - Alura 
 
 ## Screenshots<br>Capturas de pantalla
 
-![App Screenshot](https://github.com/jissbossh/alura-challenge-encriptador-texto/blob/main/readme/011%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
-![App Screenshot](https://github.com/jissbossh/alura-challenge-encriptador-texto/blob/main/readme/012%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
-![App Screenshot](https://github.com/jissbossh/alura-challenge-encriptador-texto/blob/main/readme/013%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
-![App Screenshot](https://github.com/jissbossh/alura-challenge-encriptador-texto/blob/main/readme/014%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
-![App Screenshot](https://github.com/jissbossh/alura-challenge-encriptador-texto/blob/main/readme/015%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
+![App Screenshot 1](https://github.com/jissbossh/jissbossh/blob/main/assets/images/others/png/encriptador-texto/011%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
+![App Screenshot 2](https://github.com/jissbossh/jissbossh/blob/main/assets/images/others/png/encriptador-texto/012%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
+![App Screenshot 3](https://github.com/jissbossh/jissbossh/blob/main/assets/images/others/png/encriptador-texto/013%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
+![App Screenshot 4](https://github.com/jissbossh/jissbossh/blob/main/assets/images/others/png/encriptador-texto/014%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
+![App Screenshot 5](https://github.com/jissbossh/jissbossh/blob/main/assets/images/others/png/encriptador-texto/015%20-%20Challenge%20-%20Encriptador%20de%20texto.png)
 
 ## Deployment<br>Despliegue
 
@@ -39,4 +39,4 @@ I am Jorge Ivan Sierra Suarez, software developer<br>Soy Jorge Ivan Sierra Suare
 
 ## 🔗 Links
 
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jissbossh)
+[![linkedin](https://github.com/jissbossh/jissbossh/blob/main/assets/icons/social/svg/linkedin/default.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jissbossh)

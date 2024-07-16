@@ -1,4 +1,4 @@
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://github.com/jissbossg/alura-challenge-encriptador-texto/blob/main/readme/encriptado.png)
 
 # Challenge Oracle ONE & Alura latam - G7 Text encryptor.<br>Challenge Oracle ONE & Alura latam - G7 Encriptador de texto
 

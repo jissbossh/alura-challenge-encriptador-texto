@@ -39,4 +39,4 @@ I am Jorge Ivan Sierra Suarez, software developer<br>Soy Jorge Ivan Sierra Suare
 
 ## 🔗 Links
 
-[![linkedin](https://github.com/jissbossh/jissbossh/blob/main/assets/icons/social/svg/linkedin/default.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jissbossh)
+[![linkedin](https://github.com/jissbossh/jissbossh/blob/main/assets/icons/social/svg/linkedin/default?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jissbossh)

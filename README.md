@@ -7,7 +7,7 @@ This application was developed as part of the text encryption challenge - Alura 
 ## Technologies<br>Tecnologias
 
 **Programming languages<br>Lenguajes de programacion:**
-Html, Css, JavaScript
+<br>Html, Css, JavaScript
 
 **Server<br>Servidor:**<br>Github Pages
 

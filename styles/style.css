@@ -1,0 +1,985 @@
+/* #region Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* #endregion Fuentes */
+
+/* #region Variables */
+:root {
+    /* #region fuentes */
+    --font-family-jetBrains-mono: "JetBrains Mono", monospace;
+    --font-family-inter: "Inter";
+    /* para cambiar el la familia de fuente solo cambia el valor por la fuete deseada */
+    --font-family: var(--font-family-inter);
+    /* #endregion fuentes */
+
+    /* #region tamaños de fuente */
+    --font-size-nivel1: 15px;
+    --font-size-nivel2: 16px;
+    --font-size-nivel3: 24px;
+    --font-size-nivel4: 32px;
+    /* #endregion tamaños de fuente */
+
+    /* #region tipo de fuente */
+    --font-weight-delgado: 100;
+    --font-weight-extraligero: 200;
+    --font-weight-liviana: 300;
+    --font-weight-regular: 400;
+    --font-weight-medio: 500;
+    --font-weight-seminegrita: 600;
+    --font-weight-negrita: 700;
+    --font-weight-extranegrita: 800;
+    --font-weight-negro: 900;
+    --font-weight: var(--font-weight-regular);
+    /* #endregion tipo de fuente */
+
+    /* #region coloreres de fondo tema claro */
+    --transparente: transparent;
+    --color-fondo-base: #E5E5E5;
+    --color-fondo-primario: #f1f1f1;
+    --color-fondo-secundario: #00008b;
+    --color-fondo-terceario: #D8DFE8;
+    --color-fondo-cuaternaio: #555;
+    /* #endregion coloreres de fondo  tema claro */
+
+    /* #region colores de fuente tema claro */
+    --color-base: #f1f1f1;
+    --color-primario: #00008b;
+    --color-secundario: #010101;
+    --color-terceario: #fff;
+    --color-cuaternaio: #D8DFE8;
+    /* #endregion colores de fuente tema claro */
+
+    /* #region coloreres de fondo tema oscuro */
+    --oscuro-color-fondo-base: #151516;
+    --oscuro-color-fondo-primario: #0e0e12;
+    --oscuro-color-fondo-secundario: #00008b;
+    --oscuro-color-fondo-terceario: #D8DFE8;
+    --oscuro-color-fondo-cuaternaio: #555;
+    /* #endregion coloreres de fondo  tema oscuro */
+
+    /* #region colores de fuente tema oscuro */
+    --oscuro-color-base: #f1f1f1;
+    --oscuro-color-primario: #0e0e12;
+    --oscuro-color-secundario: #f1f1f1;
+    --oscuro-color-terceario: #fff;
+    --oscuro-color-cuaternaio: #D8DFE8;
+    /* #endregion colores de fuente tema oscuro */
+}
+
+/* #endregion Variables */
+
+/* #region Estilos*/
+
+/* #region Estilos globales */
+* {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size-nivel4);
+    line-height: 150%;
+}
+
+/* #endregion Estilos globales */
+
+/* #region Estilos para el tema claro */
+body {
+    background: var(--color-fondo-base);
+}
+
+header {
+    background-color: var(--transparente);
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    width: 100%; */
+}
+
+.titulo {
+    color: var(--transparente);
+    background: transparent;
+    font-size: var(--font-size-nivel2);
+    margin: 10px;
+}
+
+.logo {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-right: 40px;
+    justify-content: center;
+}
+
+textarea {
+    margin-top: 0;
+}
+
+.texto-entrada {
+    background-color: var(--color-fondo-primario);
+    resize: none;
+    margin-top: 100px;
+    color: var(--color-primario);
+    border: none;
+}
+
+.texto-entrada::placeholder {
+    color: var(--color-primario);
+}
+
+.texto-entrada:focus {
+    outline: none;
+}
+
+.contenedor {
+    margin-left: 98px;
+    padding: 20px;
+    padding-bottom: 120px;
+    height: 612px;
+    color: var(--color-primario);
+    background: var(--color-fondo-primario);
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.imagen-texto {
+    background: var(--color-fondo-primario);
+    background-image: url(../image/notexto1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 24px 32px -8px var(--color-fondo-primario);
+}
+
+.texto-salida {
+    resize: none;
+    margin-left: 98px;
+    padding: 20px;
+    padding-bottom: 120px;
+    height: 612px;
+    color: var(--color-primario);
+    background: var(--color-fondo-primario);
+    background-image: url(../image/notexto1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.texto-salida:focus {
+    outline: none;
+}
+
+.texto-informativo {
+    color: var(--color-secundario);
+    font-size: var(--font-size-nivel2);
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.encriptar {
+    color: var(--color-cuaternaio);
+    background: var(--color-fondo-secundario);
+    border: 1px solid var(--color-primario);
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.desencriptar {
+    color: var(--color-primario);
+    background: var(--color-fondo-terceario);
+    border: 1px solid var(--color-primario);
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.texto-dinamico {
+    background: var(--transparente);
+    margin-left: 120px;
+    margin-top: -240px;
+    width: 360px;
+    position: absolute;
+    text-align: center;
+}
+
+.texto-informativo1 {
+    font-size: var(--font-size-nivel3);
+    font-weight: var(--font-weight-negrita);
+    line-height: initial;
+    background: var(--transparente);
+    color: var(--color-secundario);
+}
+
+.texto-informativo2 {
+    font-size: var(--font-size-nivel2);
+    line-height: initial;
+    background: var(--transparente);
+    color: var(--color-secundario);
+}
+
+.copiar {
+    color: var(--color-primario);
+    background: var(--color-fondo-terceario);
+    border: 1px solid var(--color-primario);
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-top: 120px;
+}
+
+.encriptar:hover,
+.desencriptar:hover,
+.copiar:hover {
+    background: var(--color-fondo-cuaternaio);
+    color: var(--color-base);
+}
+
+.texto-anuncio {
+    display: none;
+    width: 300px;
+    background-color: var(--color-fondo-cuaternaio);
+    color: var(--color-terceario);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    left: 100px;
+    margin-left: -75px;
+    opacity: .6;
+}
+
+footer {
+    background-color: var(--transparente);
+    text-align: center;
+    /* text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative; */
+}
+
+.autor {
+    color: var(--color-secundario);
+    background: transparent;
+    font-size: var(--font-size-nivel2);
+    margin: 10px;
+}
+
+/* #region Estilos para el modal para el tema claro */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 40px auto;
+    border: #010101 2px solid;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #000;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+p.content {
+    color: #000;
+}
+
+.modal-footer {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-footer button {
+    margin: 10px;
+}
+
+/* Estilos para el botón que abre el modal */
+.open-modal {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.btn-ok:hover {
+    background-color: #81c3dd;
+    cursor: pointer;
+}
+
+.btn.btn-cancel:hover {
+    background-color: #81c3dd;
+    cursor: pointer;
+}
+
+.close-modal {
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    background-color: #db1919;
+    cursor: pointer;
+}
+
+/* #endregion Estilos para el modal para el tema claro */
+/* #endregion Estilos para el tema claro */
+
+/* #region Estilos para el tema oscuro */
+body.modo-oscuro {
+    background: var(--oscuro-color-fondo-base);
+}
+
+body.modo-oscuro header {
+    background-color: transparent;
+    /* display: flex;
+    flex-direction: column;
+     */
+}
+
+body.modo-oscuro img.logo {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+body.modo-oscuro main {
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-right: 40px;
+    justify-content: center;
+}
+
+body.modo-oscuro textarea {
+    margin-top: 0;
+}
+
+body.modo-oscuro textarea.texto-entrada {
+    background-color: var(--oscuro-color-fondo-primario);
+    resize: none;
+    margin-top: 100px;
+    color: var(--color-primario);
+    border: none;
+
+}
+
+body.modo-oscuro textarea.texto-entrada::placeholder {
+    color: var(--color-primario);
+}
+
+body.modo-oscuro textarea.texto-entrada:focus {
+    outline: none;
+}
+
+body.modo-oscuro.contenedor {
+    margin-left: 98px;
+    padding: 20px;
+    padding-bottom: 120px;
+    height: 612px;
+    color: var(--oscuro-color-primario);
+    background: var(--oscuro-color-fondo-primario);
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+body.modo-oscuro.imagen-texto {
+    background: #f1f1f1;
+    background-image: url(../image/notexto1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 24px 32px -8px #f1f1f1;
+}
+
+body.modo-oscuro textarea.texto-salida {
+    resize: none;
+    margin-left: 98px;
+    padding: 20px;
+    padding-bottom: 120px;
+    height: 612px;
+    color: var(--color-primario);
+    background: var(--oscuro-color-fondo-primario);
+    background-image: url(../image/notexto1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+body.modo-oscuro textarea.texto-salida:focus {
+    outline: none;
+}
+
+body.modo-oscuro h6.texto-informativo {
+    color: var(--oscuro-color-secundario);
+    font-size: var(--font-size-nivel2);
+}
+
+body.modo-oscuro div.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+body.modo-oscuro button.encriptar {
+    color: var(--oscuro-color-cuaternaio);
+    background: var(--oscuro-color-fondo-secundario);
+    border: 1px solid var(--oscuro-color-primario);
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+body.modo-oscuro button.desencriptar {
+    color: var(--oscuro-color-primario);
+    background: var(--oscuro-color-fondo-terceario);
+    border: 1px solid var(--oscuro-color-primario);
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+body.modo-oscuro div.texto-dinamico {
+    background: var(--transparente);
+    margin-left: 120px;
+    margin-top: -240px;
+    width: 360px;
+    position: absolute;
+    text-align: center;
+}
+
+body.modo-oscuro h2.texto-informativo1 {
+    font-size: var(--font-size-nivel3);
+    font-weight: var(--font-weight-negrita);
+    line-height: initial;
+    background: var(--transparente);
+    color: var(--oscuro-color-secundario);
+}
+
+body.modo-oscuro h3.texto-informativo2 {
+    font-size: var(--font-size-nivel2);
+    line-height: initial;
+    background: var(--transparente);
+    color: var(--oscuro-color-secundario);
+}
+
+body.modo-oscuro button.copiar {
+    color: var(--oscuro-color-primario);
+    background: var(--oscuro-color-fondo-terceario);
+    border: 1px solid var(--oscuro-color-primario);
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-top: 120px;
+}
+
+body.modo-oscuro button.encriptar:hover,
+body.modo-oscuro button.desencriptar:hover,
+body.modo-oscuro button.copiar:hover {
+    background: var(--oscuro-color-fondo-cuaternaio);
+    color: var(--oscuro-color-base);
+}
+
+body.modo-oscuro span.texto-anuncio {
+    display: none;
+    width: 300px;
+    background-color: var(--oscuro-color-fondo-cuaternaio);
+    color: var(--oscuro-color-terceario);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    left: 100px;
+    margin-left: -75px;
+    opacity: .6;
+}
+
+body.modo-oscuro footer {
+    background-color: var(--transparente);
+    text-align: center;
+    /* text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative; */
+}
+
+body.modo-oscuro h2.autor {
+    color: var(--oscuro-color-secundario);
+    background: transparent;
+    font-size: var(--font-size-nivel2);
+    margin: 10px;
+}
+
+/* #region Estilos para el modal para el tema oscuro */
+body.modo-oscuro div.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+body.modo-oscuro div.modal.show {
+    display: flex;
+}
+
+body.modo-oscuro div.modal-content {
+    background-color: #010101;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 40px auto;
+    border: #f1f1f1 2px solid;
+}
+
+body.modo-oscuro div.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+
+}
+
+body.modo-oscuro div.modal-header h2 {
+    margin: 0;
+    color: #fff;
+}
+
+body.modo-oscuro div.modal-body {
+    padding: 20px;
+}
+
+body.modo-oscuro p.content {
+    color: #fff;
+}
+
+body.modo-oscuro div.modal-footer {
+    padding: 10px;
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body.modo-oscuro.modal-footer button {
+    margin: 10px;
+}
+
+/* Estilos para el botón que abre el modal */
+body.modo-oscuro button.open-modal {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.modo-oscuro button.btn.btn-ok:hover {
+    background-color: #81c3dd;
+    cursor: pointer;
+}
+
+body.modo-oscuro button.btn.btn-cancel:hover {
+    background-color: #81c3dd;
+    cursor: pointer;
+}
+
+body.modo-oscuro button.close-modal {
+    cursor: pointer;
+}
+
+body.modo-oscuro button.close-modal:hover {
+    background-color: #db1919;
+    cursor: pointer;
+}
+
+/* #endregion Estilos para el modal para el tema oscuro */
+/* #endregion Estilos para el tema oscuro */
+
+/* #region Diseño adaptable */
+
+/* #region Laptop  */
+@media (max-width: 1490px) {
+    main {
+        margin-left: 0px;
+    }
+
+    .texto-entrada {
+        margin-top: 100px;
+        width: 686px;
+        height: 400px;
+    }
+
+    .botones,
+    .texto-salida {
+        margin-top: 18px;
+    }
+
+    .texto-salida {
+        height: 550px;
+    }
+
+    .texto-dinamico {
+        margin-top: -160px;
+    }
+
+    .copiar {
+        margin-top: 60px;
+    }
+
+    .open-modal {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn.btn-ok:hover {
+        background-color: #81c3dd;
+        cursor: pointer;
+    }
+
+    .btn.btn-cancel:hover {
+        background-color: #81c3dd;
+        cursor: pointer;
+    }
+
+    .close-modal {
+        cursor: pointer;
+    }
+
+    body.modo-oscuro main {
+        margin-left: 0px;
+    }
+
+    body.modo-oscuro textarea.texto-entrada {
+        margin-top: 100px;
+        width: 686px;
+        height: 400px;
+    }
+
+    body.modo-oscuro button.botones,
+    body.modo-oscuro textarea.texto-salida {
+        margin-top: 18px;
+    }
+
+    body.modo-oscuro textarea.texto-salida {
+        height: 550px;
+    }
+
+    body.modo-oscuro div.texto-dinamico {
+        margin-top: -160px;
+    }
+
+    body.modo-oscuro button.copiar {
+        margin-top: 60px;
+    }
+
+    body.modo-oscuro div.open-modal {
+        background-color: #4CAF50;
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    body.modo-oscuro button.btn.btn-ok:hover {
+        background-color: #81c3dd;
+        cursor: pointer;
+    }
+
+    body.modo-oscuro button.btn.btn-ok:hover {
+        background-color: #81c3dd;
+        cursor: pointer;
+    }
+
+    body.modo-oscuro button.close-modal {
+        cursor: pointer;
+    }
+
+
+
+}
+
+/* #endregion Laptop */
+
+/* #region Tablet */
+@media (max-width: 768px) {
+    .logo {
+        width: 15%;
+        padding: 5px 0 5px 0;
+        margin: 5px 0 5px 0;
+    }
+
+    main {
+        display: block;
+        margin: 0px 30px;
+    }
+
+    .texto-entrada {
+        margin-top: 10px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .botones {
+        margin-top: 0px;
+    }
+
+    .texto-salida {
+        margin: 40px 0px;
+        width: 655px;
+        height: 200px;
+        background: var(--color-fondo-primario);
+        background-image: none;
+    }
+
+    .texto-dinamico {
+        margin-top: -250px;
+        margin-left: 0px;
+        width: 655px;
+    }
+
+    .texto-informativo1 {
+        margin-bottom: .5em;
+    }
+
+    .copiar {
+        margin-top: 100px;
+    }
+
+    .texto-anuncio {
+        margin-left: 70px;
+    }
+
+    body.modo-oscuro img.logo {
+        width: 15%;
+        padding: 5px 0 5px 0;
+        margin: 5px 0 5px 0;
+    }
+
+    body.modo-oscuro main {
+        display: block;
+        margin: 0px 30px;
+    }
+
+    body.modo-oscuro textarea.texto-entrada {
+        margin-top: 10px;
+        width: 100%;
+        height: 300px;
+    }
+
+    body.modo-oscuro div.botones {
+        margin-top: 0px;
+    }
+
+    body.modo-oscuro textarea.texto-salida {
+        margin: 40px 0px;
+        width: 655px;
+        height: 300px;
+        background: var(--oscuro-color-fondo-primario);
+        background-image: none;
+    }
+
+    body.modo-oscuro div.texto-dinamico {
+        margin-top: -250px;
+        margin-left: 0px;
+        width: 655px;
+    }
+
+    body.modo-oscuro h2.texto-informativo1 {
+        margin-bottom: .5em;
+    }
+
+    body.modo-oscuro button.copiar {
+        margin-top: 100px;
+    }
+
+    body.modo-oscuro span.texto-anuncio {
+        margin-left: 70px;
+    }
+}
+
+/* #endregion Tablet */
+
+/* #region Smartphone */
+@media (max-width: 375px) {
+    /* #region tema claro */
+
+    .logo {
+        margin-top: 4px;
+        width: 30%;
+    }
+
+    .texto-entrada {
+        margin-top: 20px;
+        height: 340px;
+    }
+
+    .botones {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .encriptar,
+    .desencriptar {
+        width: 100%;
+    }
+
+    .desencriptar {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .texto-salida,
+    .texto-dinamico,
+    .copiar {
+        width: 295px;
+    }
+
+    .texto-dinamico {
+        margin-left: 10px;
+    }
+
+    .texto-salida {
+        padding: 10px;
+        padding-bottom: 120px;
+        height: 180px;
+        background-image: none;
+    }
+
+    .texto-anuncio {
+        width: 285px;
+        margin-left: -100px;
+    }
+
+    /* #endregion tema claro */
+
+    /* #region tema oscuro */
+
+    body.modo-oscuro img.logo {
+        margin-top: 4px;
+        width: 30%;
+    }
+
+    body.modo-oscuro textarea.texto-entrada {
+        margin-top: 20px;
+        height: 340px;
+    }
+
+    body.modo-oscuro div.botones {
+        display: block;
+        margin-top: 0px;
+    }
+
+    body.modo-oscuro button.encriptar,
+    body.modo-oscuro button.desencriptar {
+        width: 100%;
+    }
+
+    body.modo-oscuro button.desencriptar {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    body.modo-oscuro textarea.texto-salida,
+    body.modo-oscuro div.texto-dinamico,
+    body.modo-oscuro button.copiar {
+        width: 295px;
+    }
+
+    body.modo-oscuro div.texto-dinamico {
+        margin-left: 10px;
+    }
+
+    body.modo-oscuro textarea.texto-salida {
+        padding: 10px;
+        padding-bottom: 120px;
+        height: 180px;
+        background-image: none;
+    }
+
+    body.modo-oscuro span.texto-anuncio {
+        width: 285px;
+        margin-left: -100px;
+    }
+
+    /* #endregion tema oscuro */
+
+}
+
+/* #endregion Smartphone */
+
+/* #endregion Diseño adaptable */
+
+/* #endregion Estilos */

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es-co">
+    <head>
+        <!-- #region bloque de metadadtos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- #endregion bloque de metadadtos -->
+        <!-- #region bloque de identidad de la aplicacion -->
+        <title></title>
+        <link id="icono">
+        <!-- #endregion bloque de identidad de la aplicacion -->
+        <!-- #region bloque de estilos -->
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link id="estilos" rel="stylesheet" href="./styles/style.css">
+        <!-- #endregion bloque de estilos -->
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">Encriptador de texto</h1>
+        </header>
+        <main>
+            <section>
+                <!-- #region mensaje -->
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-header" id="modal-header"></h2>
+                            <button class="close-modal"
+                                id="close-modal">X</button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="content" id="content"></pclass>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-ok"
+                                id="aceptar">Aceptar</button>
+                            <button class="btn btn-cancel" id="cancelar"
+                                hidden>Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion mensaje -->
+                <!-- #region bloque de icono -->
+                <nav>
+                    <img id="alternar-tema" class="logo">
+                    <h1 id="titulo"></h1>
+                </nav>
+                <!-- #endregion bloque de icono -->
+            </section>
+            <section>
+                <!-- #region bloque de campo de ingreso de datos -->
+                <textarea class="texto-entrada" cols="30" rows="10"
+                    placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <!-- #endregion bloque de campo de ingreso de datos -->
+                <!-- #region bloque de mensaje informtivo -->
+                <div>
+                    <h6 class="texto-informativo">&#9888 Solo letras minúsculas
+                        y sin
+                        acentos.</h6>
+                </div>
+                <!-- #endregion bloque de mensaje informtivo -->
+                <!-- #region bloque de botones de acciones -->
+                <div class="botones">
+                    <button name="encriptar" class="encriptar"
+                        onclick="encriptar()">Encriptar</button>
+                    <button name="desencriptar" class="desencriptar"
+                        onclick="desencriptar()">Desencriptar</button>
+                </div>
+                <!-- #endregion bloque de botones de acciones -->
+            </section>
+            <section>
+                <!-- #region bloque de campo de salida de datos -->
+                <textarea class="texto-salida" cols="20" rows="10"
+                    disabled></textarea>
+                <!-- #endregion bloque de campo de salida de datos -->
+                <!-- #region bloque de mensaje dinamico  -->
+                <div class="texto-dinamico">
+                    <h2 class="texto-informativo1">Ningún mensaje fue
+                        encontrado</h2>
+                    <h3 class="texto-informativo2">Ingresa el texto que desees
+                        encriptar o
+                        desencriptar.</h3>
+                    <button name="copiar" class="copiar" onclick="copiar()"
+                        style="display:none;">
+                        <span class="texto-anuncio">
+                        </span>Copiar</button>
+                </div>
+                <!-- #endregion bloque de mensaje dinamico  -->
+            </section>
+        </main>
+        <footer>
+            <!-- #region autor -->
+            <h2 class="autor">&copy Desarrollado por jissbossh</h2>
+            <!-- #endregion autor -->
+        </footer>
+        <!-- #region bloque de scripts -->
+    <script src="./scripts/script.js"></script>
+    <!-- #endregion bloque de scripts -->
+    </body>
+</html>
